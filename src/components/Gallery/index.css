@@ -1,0 +1,75 @@
+/* Write your code here. */
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media screen and (max-width: 576px) {
+  .app-container {
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.gallery-image {
+  height: 460px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .gallery-image {
+    height: 220px;
+    align-self: center;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+.heading {
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .heading {
+    font-size: 34px;
+  }
+}
+
+.description {
+  font-family: 'Roboto';
+  color: #64748b;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+  .description {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.thumbnail-item-list-container {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .thumbnail-item-list-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
